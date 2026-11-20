@@ -1,14 +1,21 @@
 # CVAT docs samples
 
-Two guides I wrote for [CVAT](https://www.cvat.ai), the open-source tool for labeling images and video for computer vision.
+Documentation I wrote for [CVAT](https://www.cvat.ai), the open-source tool for labeling images and video for computer vision.
 
 Both use the same small project: 11 photos of metal 3D printing defects, labeled as `crack` or `porosity` and exported as a COCO dataset. I ran every command and every line of code against CVAT Online in November 2026, and the outputs you see in the guides are from those runs.
 
-## The guides
+## How this site is organised
 
-[**Python SDK tutorial**](sdk-coco-tutorial.md) goes from a folder of images to a labeled CVAT task, then exports it as COCO with one script. Start here if you work in Python.
+The pages follow [Diátaxis](https://diataxis.fr/), which splits documentation by what the reader needs at that moment:
 
-[**REST API quickstart**](rest-api-quickstart.md) does the export with plain `curl`, and covers token auth and paging through results along the way. Use this one if you work in another language or want to see the raw HTTP calls.
+| Type | Page | Read it when |
+| --- | --- | --- |
+| Tutorial | [Build a COCO dataset with the Python SDK](sdk-coco-tutorial.md) | You're new to CVAT and want a working result end to end |
+| How-to guide | [Export a dataset with the REST API](rest-api-quickstart.md) | You know what you want and need the steps, in any language |
+| Reference | [SDK, API and script reference](reference.md) | You need an exact parameter, default or status value |
+| Explanation | [Why exports run in the background](explanation-exports.md) | You want to understand how exports work before building on them |
+
+Keeping these apart means each page can do one job well. The tutorial doesn't stop to list every parameter, and the reference doesn't try to teach.
 
 ## About these samples
 
