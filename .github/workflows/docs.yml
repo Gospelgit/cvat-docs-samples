@@ -34,6 +34,11 @@ jobs:
       - name: Build the site
         run: mkdocs build --strict
 
+      - name: Build the Sphinx edition
+        run: |
+          pip install -r sphinx/requirements.txt
+          python -m sphinx -W --keep-going -b html sphinx sphinx/_build/html
+
       - name: Check links
         uses: lycheeverse/lychee-action@v2
         with:
