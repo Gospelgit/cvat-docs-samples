@@ -39,10 +39,12 @@ jobs:
         with:
           args: >-
             --no-progress
+            --max-retries 3
             --exclude "app\.cvat\.ai"
             --exclude "localhost|127\.0\.0\.1"
             --exclude "gospelgit\.github\.io"
-            --exclude "github\.com/Gospelgit/cvat-docs-samples/edit"
+            --exclude "github\.com/Gospelgit/cvat-docs-samples"
+            --exclude "linkedin\.com"
             "./docs/**/*.md" README.md
           fail: true
 
