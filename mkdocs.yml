@@ -1,0 +1,40 @@
+site_name: CVAT docs samples
+site_description: Tutorials for the CVAT Python SDK and REST API, written and tested by Gospel Bassey
+site_author: Gospel Bassey
+site_url: https://gospelgit.github.io/cvat-docs-samples/
+repo_url: https://github.com/Gospelgit/cvat-docs-samples
+repo_name: Gospelgit/cvat-docs-samples
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - Python SDK tutorial: sdk-coco-tutorial.md
+  - REST API quickstart: rest-api-quickstart.md
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - content.action.edit
+    - navigation.footer
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+validation:
+  links:
+    anchors: warn
