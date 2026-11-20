@@ -1,11 +1,15 @@
 # CVAT docs samples
 
-Two guides for [CVAT](https://www.cvat.ai), written and tested by Gospel Bassey.
+Documentation samples for [CVAT](https://www.cvat.ai), written and tested by Gospel Bassey.
 
 **Read them here:** https://gospelgit.github.io/cvat-docs-samples/
 
-- [Python SDK tutorial](docs/sdk-coco-tutorial.md): turn a folder of defect images into a labeled CVAT task and export it as COCO
-- [REST API quickstart](docs/rest-api-quickstart.md): token auth, paging through tasks and exporting a dataset with `curl`
+Organised with [Diátaxis](https://diataxis.fr/):
+
+- Tutorial: [Python SDK tutorial](docs/sdk-coco-tutorial.md), turning a folder of defect images into a labeled CVAT task and a COCO export
+- How-to guide: [REST API quickstart](docs/rest-api-quickstart.md), with token auth, paging and dataset export using `curl`
+- Reference: [SDK, API and script reference](docs/reference.md)
+- Explanation: [Why exports run in the background](docs/explanation-exports.md)
 
 Both guides use the same small project, 11 metal 3D printing defect images labeled `crack` or `porosity`. All commands and code were run against CVAT Online in November 2026.
 

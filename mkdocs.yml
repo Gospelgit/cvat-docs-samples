@@ -8,8 +8,14 @@ edit_uri: edit/main/docs/
 
 nav:
   - Home: index.md
-  - Python SDK tutorial: sdk-coco-tutorial.md
-  - REST API quickstart: rest-api-quickstart.md
+  - Tutorials:
+      - Build a COCO dataset with the Python SDK: sdk-coco-tutorial.md
+  - How-to guides:
+      - Export a dataset with the REST API: rest-api-quickstart.md
+  - Reference:
+      - SDK, API and script reference: reference.md
+  - Explanation:
+      - Why exports run in the background: explanation-exports.md
 
 theme:
   name: material
@@ -17,6 +23,7 @@ theme:
     - content.code.copy
     - content.action.edit
     - navigation.footer
+    - navigation.sections
   palette:
     - scheme: default
       toggle:
